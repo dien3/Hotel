@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_kamar_edit"
+    android:background="#f5f5f5"
+    android:layout_marginTop="120dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+    <EditText
+        android:id="@+id/EditKodeHotel"
+        android:hint="Kode"
+        android:layout_marginTop="10dp"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textPersonName"
+        android:elevation="5dp"
+        android:background="@drawable/radius_formwhiteblur"
+        />
+
+    <EditText
+        android:id="@+id/EditTypeKamar"
+        android:layout_below="@id/EditKodeHotel"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="20dp"
+
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Type Kamar"
+        android:background="@drawable/radius_formwhiteblur"
+        android:inputType="textPersonName"
+        android:elevation="5dp"
+        />
+
+    <ImageButton
+        android:id="@+id/Arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/EditKodeHotel"
+        android:background="#f5f5f5"
+        android:layout_toRightOf="@id/EditTypeKamar"
+        android:src="@drawable/arrow" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_below="@id/EditKodeHotel"
+        android:layout_toRightOf="@id/EditTypeKamar"
+        android:layout_width="20dp"
+        android:paddingLeft="15dp"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_marginLeft="335dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="55dp"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:elevation="5dp"
+
+        />
+
+
+
+    <EditText
+        android:id="@+id/EditHargaPerMalam"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/EditTypeKamar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/montserrat"
+        android:inputType="number"
+        android:textSize="15dp"
+        android:elevation="5dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:hint="Harga Per Malam"/>
+
+    <EditText
+        android:id="@+id/EditTglCheckIn"
+        android:layout_below="@id/EditHargaPerMalam"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Cekin"
+        android:background="@drawable/radius_formwhiteblur"
+        android:inputType="textPersonName"
+        android:elevation="5dp"
+        />
+
+    <EditText
+        android:id="@+id/EditTglCheckOut"
+        android:layout_below="@id/EditTglCheckIn"
+        android:layout_width="280dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Cekout"
+        android:background="@drawable/radius_formwhiteblur"
+        android:inputType="textPersonName"
+        android:elevation="5dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonCekin"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="12dp"
+        android:elevation="5dp"
+        android:layout_below="@id/EditHargaPerMalam"
+        android:background="@drawable/radius_button"
+        android:layout_toRightOf="@id/EditTglCheckIn"
+        android:src="@drawable/calender" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCekout"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="12dp"
+        android:elevation="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/imageButtonCekin"
+        android:background="@drawable/radius_button"
+        android:layout_toRightOf="@id/EditTglCheckOut"
+        android:src="@drawable/calender" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_below="@id/imageButtonCekout"
+        android:textAlignment="textStart"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/textdeskripsi"
+        android:textColor="@color/purple_700"
+        android:gravity="center"
+        android:text="*Hanya Bisa mengubah Tipe Kamar dan Tanggal Checkin - Checkout!"
+        android:fontFamily="@font/montserratthin"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

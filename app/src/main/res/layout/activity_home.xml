@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/cover" />
+
+    <ImageView
+        android:id="@+id/img2Bg"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/logohotel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="38dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textjudul"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Hello Welcome!"
+        android:fontFamily="@font/poppins"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/textjudul"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textdeskripsi"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Booking Room sesuai keinginan anda jangan salah pilih!"
+        android:fontFamily="@font/montserratthin"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_below="@id/imgBg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textjudul2"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="About Us!"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:layout_below="@id/textjudul2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textdeskripsi2"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Hotel ini adalah hotel termahal didunia hotel paling nyaman didunia hotel yang tidak akan pernaha da yang bisa menyamakan level ini dengan hotel yang sudah ada atau bahkan yang akan datang!"
+        android:fontFamily="@font/montserratthin"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_below="@id/textdeskripsi2"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/list"
+        android:paddingLeft="20dp"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/radius_button"
+        android:text="History Booking" />
+
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_below="@id/btnList"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/add"
+        android:paddingLeft="20dp"
+        android:drawablePadding="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radius_button"
+        android:text="Input Booking" />
+
+
+</RelativeLayout>

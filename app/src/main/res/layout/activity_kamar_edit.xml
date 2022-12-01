@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KamarEditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textjudul"
+        android:textColor="@color/purple_700"
+        android:gravity="center"
+        android:text="Edit Booking"
+        android:fontFamily="@font/poppins"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/textdeskripsi"
+        android:textColor="@color/purple_700"
+        android:gravity="center"
+        android:text="Edit Booking Room sesuai keinginan anda jangan salah edit!"
+        android:fontFamily="@font/montserratthin"
+        tools:ignore="RtlCompat" />
+
+
+    <include layout="@layout/content_kamar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="#262626"
+        android:layout_margin="30dp"
+        android:src="@drawable/save" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#262626"
+        android:src="@drawable/delete"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
