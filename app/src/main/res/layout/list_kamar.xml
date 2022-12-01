@@ -88,7 +88,7 @@
             android:layout_toRightOf="@id/imgBg"
             android:layout_marginLeft="10dp"
             android:layout_below="@id/textViewTipeKamar"
-            card_view:srcCompat="@drawable/cekinnew" />
+            />
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="17dp"
@@ -97,7 +97,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/imageView2"
-            card_view:srcCompat="@drawable/cekoutnew" />
+            />
 
     </RelativeLayout>
 

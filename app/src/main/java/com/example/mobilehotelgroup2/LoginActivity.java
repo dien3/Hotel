@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText username;
+    EditText email;
     EditText password;
     ProgressDialog pDialog;
     Button buttonLogin;
@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //inisialisasi tampilan
         pDialog = new ProgressDialog(context);
-        username = findViewById(R.id.username);
+        email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.buttonLogin);
 
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
 //login sistem
     public void LoginSistem(){
         final String Url = "http://10.0.2.2/e-HotelMobile/login.php";
-        final String NamaUser = username.getText().toString().trim();
+        final String NamaUser = email.getText().toString().trim();
         final String Pass = password.getText().toString().trim();
         pDialog.setMessage("Login Process...");
         showDialog();

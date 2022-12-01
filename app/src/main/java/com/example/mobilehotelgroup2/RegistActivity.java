@@ -57,7 +57,7 @@ public class RegistActivity extends AppCompatActivity {
 
 
 //        button untuk save data ke server
-        Button buttonRegist = findViewById(R.id.buttonRegist);
+        Button buttonRegist = findViewById(R.id.buttonSignUp);
         buttonRegist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +79,7 @@ public class RegistActivity extends AppCompatActivity {
             kamar = new Kamar();
         }
 
-        TextView textLogin = findViewById(R.id.textLogin);
+        TextView textLogin = findViewById(R.id.loginText);
         textLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,8 +100,8 @@ public class RegistActivity extends AppCompatActivity {
     private void initUI() {
         pDialog = new ProgressDialog(RegistActivity.this);
 
-        EditUsername   = (EditText) findViewById(R.id.EditUsername);
-        EditPassword  = (EditText) findViewById(R.id.EditPassword);
+        EditUsername   = (EditText) findViewById(R.id.inusername);
+        EditPassword  = (EditText) findViewById(R.id.inpassword);
     }
 
     @Override
@@ -111,7 +111,7 @@ public class RegistActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
-        if (id == R.id.buttonRegist) {
+        if (id == R.id.buttonSignUp) {
             saveDataVolley();
             return true;
         }
